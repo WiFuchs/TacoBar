@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Will's Taco Bar</title>
+  </head>
+  <body>
+
+  	<!-- MODAL -->
+  	<div class="modal fade" id="errorModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+	    		<div class="modal-header bg-danger">
+	    			<h5 class="modal-title" id="errorModalTitle">Whoops!</h5>
+	    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      		<div class="modal-body">
+			    </div>
+	    		<div class="modal-footer">
+	        		<button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+	<!-- END MODAL -->
+
+	<div class="container-fluid pl-5 pr-5 pb-5">
+		<div class="row">
+			<div class="col pb-5 pt-5">
+				<h1 class="display-3 text-center">Welcome to Will's Taco Bar</h1>
+				<h3 class="text-muted text-center">I put a taqueria on the moon</h3>
+			</div>
+		</div>
+
+		<!-- ORDER FORM -->
+		<form id="order">
+			<div class="row mt-4 mb-4">
+				<div class="col-sm mt-4">
+					<ul class="list-group" id="shell" data-max="1">
+						<li class="list-group-item list-group-item-primary">
+							<h3 class="text-center">Shells <br><small>(Choose 1)</small></h3>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm mt-4">
+					<ul class="list-group" id="bases" data-max="3">
+						<li class="list-group-item list-group-item-primary">
+							<h3 class="text-center">Base Layers <br><small>(1-3)</small></h3>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm mt-4">
+					<ul class="list-group" id="mixins" data-max="-1">
+						<li class="list-group-item list-group-item-primary">
+							<h3 class="text-center">Mixins <br><small>(&infin;)</small></h3>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm mt-4">
+					<ul class="list-group" id="condiments" data-max="4">
+						<li class="list-group-item list-group-item-primary">
+							<h3 class="text-center">Condiments <br><small>(1-4)</small></h3>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm mt-4">
+					<ul class="list-group" id="seasonings" data-max="3">
+						<li class="list-group-item list-group-item-primary">
+							<h3 class="text-center">Seasonings <br><small>(1-3)</small></h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="fixed-bottom bg-light">
+				<div class="col-md-3 float-right p-3">
+					<button type="submit" class="btn btn-success d-inline" id="submit">Order</button>
+					<p class="d-inline"> or </p>
+					<button class="btn btn-warning d-inline" id="surprise">Get me started!</button>
+				</div>
+			</div>
+		</form>
+		<!-- END ORDER FORM -->
+
+		<!-- ORDER TABLE -->
+		<div class="row" id="order-container">
+			<div class="col-md-8 offset-md-2 mb-5">
+				<ul class="list-group" id="orders">
+					<li class="list-group-item list-group-item-primary">
+						<h3 class="text-center d-inline-block float-left">Orders</h3>
+						<button class="btn btn-danger d-inline-block float-right" id="removeAll">Clear All</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- END ORDER TABLE -->
+
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
